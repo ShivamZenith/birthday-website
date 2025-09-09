@@ -1,0 +1,47 @@
+.celebration {
+  position: relative;
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  overflow: hidden;
+  border-radius: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.celebration button {
+  padding: 12px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  background: #ff6b81;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.celebration button:hover {
+  transform: scale(1.1);
+  background: #ff4b69;
+}
+
+/* Floating hearts animation */
+.heart {
+  position: absolute;
+  bottom: 0;
+  animation-name: floatUp;
+  animation-timing-function: linear;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-600px) rotate(360deg);
+    opacity: 0;
+  }
+}
